@@ -1,4 +1,5 @@
 import Layout from "layout";
+import Upcoming from "page/upcoming";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -8,16 +9,10 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <div>:)</div>,
-				children: [
-					{
-						path: "main",
-						elememt: <div>main page</div>,
-					},
-					{
-						path: "detail",
-						elememt: <div>detail page</div>,
-					},
-				],
+			},
+			{
+				path: "upcoming",
+				element: <Upcoming />,
 			},
 		],
 	},
